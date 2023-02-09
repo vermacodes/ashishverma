@@ -3,7 +3,9 @@ import { CollectionEntry, getCollection } from "astro:content";
 import BlogLayout from "../../layouts/BlogLayout.astro";
 
 export async function getStaticPaths() {
-    const blogs = await getCollection("blogs");
+    const blogs = await getCollection("blogs", ({ data }) => {
+        return !data.draft && data.date < new Date();
+    });
     return blogs.map((blog) => ({
         params: { slug: blog.slug },
         props: { blog },
@@ -42,7 +44,7 @@ function formatDate(date: Date) {
 
 <BlogLayout title={blog.data.title}>
     <div
-        class="lg:prose-lg max-w-none xl:prose-2xl prose dark:prose-invert prose-slate prose-h1:bg-gradient-to-r prose-h1:py-2 prose-h1:from-emerald-500 prose-h1:via-blue-600 prose-h1:to-purple-500 prose-h1:inline-block prose-h1:text-transparent prose-h1:bg-clip-text prose-h1:justify-center prose-h2:text-emerald-500"
+        class="lg:prose-lg max-w-none xl:prose-xl prose dark:prose-invert prose-slate prose-h1:bg-gradient-to-r prose-h1:py-2 prose-h1:from-emerald-500 prose-h1:via-blue-600 prose-h1:to-purple-500 prose-h1:inline-block prose-h1:text-transparent prose-h1:bg-clip-text prose-h1:justify-center prose-h2:text-emerald-500"
     >
         <h4 class="text-slate-500">{formatDate(blog.data.date)}</h4>
         <article>

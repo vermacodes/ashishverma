@@ -1,44 +1,26 @@
 ---
-title: First Blog and let me give a long title
+title: My first blog.
 description: This is my first blog. I am proud of it.
-date: 2023-08-02
+date: 2023-02-08
+draft: false
 tags: ["aks", "tooling"]
 ---
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I've always wanted to write blogs. Sharing various experiences with world. I was never able to do that because how lazy I am. But better late than never.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Introduction](#introduction)
-- [Second Title](#second-title)
+- [What would I write about?](#what-would-i-write-about)
+- [How often would I write?](#how-often-would-i-write)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Introduction
+## What would I write about?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+To begin with, I am planning to write about things I learn everyday. These days I am deeply involved with Azure Kubernetes and other container technologies. I will write about them. In past few months, I've learned a lot about web development. I will write about that. And may be more.
 
-## Second Title
+## How often would I write?
 
-This is the second section.
-
-```json
-{
-    "id": 1,
-    "name": "Ashish",
-}
-```
-
-This is an example of `inline code`.
-
-```mermaid
-sequenceDiagram
-App ->> Server : Build
-App ->> Storage Account : Save
-Storage Account ->> App: Load To Builder
-App ->> Server: Plan
-App ->> Server: Deploy
-App ->> Server: Destroy
-```
+I dont want to promsie. I will do my best to write atleast one blog each week.

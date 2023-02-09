@@ -3,7 +3,9 @@ import { getCollection } from "astro:content";
 import PostCard from "../components/PostCard";
 import Layout from "../layouts/Layout.astro";
 
-const blogs = await getCollection("blogs");
+const blogs = await getCollection("blogs", ({ data }) => {
+    return !data.draft && data.date < new Date();
+});
 ---
 
 <Layout title="blog">
